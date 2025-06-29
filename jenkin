@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/SanjayTomar22/cdec-b27.git'
+                git branch: 'main', url: 'https://github.com/mrudul08cloud/testjenkin.git'
             }
         }
         stage('build') {
