@@ -2,7 +2,11 @@ pipeline {
     agent any
 
     stages {
-     
+        stage('pull') {
+            steps {
+                git branch: 'main', url: 'https://github.com/SanjayTomar22/cdec-b27.git'
+            }
+        }
         stage('build') {
             steps {
                echo 'Build Success'
